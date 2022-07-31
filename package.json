@@ -1,0 +1,16 @@
+{
+  "name": "zen-g-vite",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "shake.js": "^1.2.2"
+  }
+}
