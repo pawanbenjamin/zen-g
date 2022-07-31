@@ -1,5 +1,5 @@
 import './style.css'
-import shake from 'shake.js'
+import Shake from 'shake.js'
 
 const myShakeEvent = new Shake({
   threshold: 15, // optional shake strength threshold
@@ -29,7 +29,7 @@ quoteContainer.addEventListener('click', (e) => {
   }, 5000)
 })
 
-quoteContainer.addEventListener('shake', (e) => {
+window.addEventListener('shake', (e) => {
   const randomIndex = Math.floor(Math.random() * quotes.length)
   e.target.classList.toggle('hide')
 
