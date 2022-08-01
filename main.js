@@ -5,6 +5,7 @@ const myShakeEvent = new Shake()
 
 myShakeEvent.start()
 
+// const video = document.querySelector('#video')
 const quoteContainer = document.querySelector('.quote')
 // const video = document.querySelector('#video')
 
@@ -15,7 +16,7 @@ quoteContainer.addEventListener('click', (e) => {
   setTimeout(() => {
     e.target.innerText = quotes[randomIndex]
     e.target.classList.toggle('hide')
-  }, 5000)
+  }, 4000)
 })
 
 window.addEventListener('shake', (e) => {
@@ -25,5 +26,5 @@ window.addEventListener('shake', (e) => {
   setTimeout(() => {
     e.target.innerText = quotes[randomIndex]
     e.target.classList.toggle('hide')
-  }, 5000)
+  }, 4000)
 })
