@@ -27,8 +27,26 @@ body {
   height: 100vh;
 }
 
+.triangle {
+  top: 500px;
+  left: 50px;
+  pointer-events: none;
+  z-index: -2;
+  position: fixed;
+  transition: all 5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.show-triangle {
+  top: 80%;
+  opacity: 1;
+  transform: translate(-50%, 0%) rotate(40deg);
+}
+
 .moon {
-  top: -300px;
+  top: -200px;
+  left: -50px;
   pointer-events: none;
   z-index: -2;
   position: fixed;
@@ -38,11 +56,24 @@ body {
 }
 
 .show-moon {
-  top: 30%;
+  top: 20%;
   opacity: 1;
-  transform: translate(0%, -50%) rotate(360deg);
+  transform: translate(0%, -50%) rotate(80deg);
 }
 
+.clouds {
+  pointer-events: none;
+  z-index: -2;
+  position: fixed;
+  transition: all 5s ease;
+  opacity: 0;
+  transform: translateX(300px) rotate(0deg);
+}
+
+.show-clouds {
+  opacity: 1;
+  transform: translateX(0);
+}
 .quote {
   opacity: 1;
   transition: all 2.5s ease-out;
@@ -70,11 +101,11 @@ body {
   background-size: 200% auto;
 
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-  animation: shine 6s linear infinite;
+  background-clip: text;
+  color: transparent;
+
+  animation: shine 3s linear infinite;
 
   text-align: center;
 }
