@@ -67,11 +67,16 @@ body {
       #5d4a1f 100%
     );
 
+  background-size: 200% auto;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  animation: shine 6s linear infinite;
+
   text-align: center;
-  animation: fadeIn 2s;
 }
 
 .quote:active {
@@ -105,12 +110,17 @@ body {
   }
 }
 
-@keyframes gradient {
+@keyframes shine {
   0% {
-    background-position: 0% 50%;
+    background-position: left;
   }
+
+  50% {
+    background-position: right;
+  }
+
   100% {
-    background-position: 50% 0%;
+    background-position: left;
   }
 }
 
