@@ -18,15 +18,15 @@ quoteContainer.addEventListener('click', (e) => {
     e.target.innerText = quotes[randomIndex]
     e.target.classList.toggle('hide')
     moon.classList.toggle('show-moon')
-  }, 4000)
+  }, 5000)
 })
 
-window.addEventListener('shake', (e) => {
-  const randomIndex = Math.floor(Math.random() * quotes.length)
-  e.target.classList.toggle('hide')
+// window.addEventListener('shake', (e) => {
+//   const randomIndex = Math.floor(Math.random() * quotes.length)
+//   e.target.classList.toggle('hide')
 
-  setTimeout(() => {
-    e.target.innerText = quotes[randomIndex]
-    e.target.classList.toggle('hide')
-  }, 4000)
-})
+//   setTimeout(() => {
+//     e.target.innerText = quotes[randomIndex]
+//     e.target.classList.toggle('hide')
+//   }, 4000)
+// })
