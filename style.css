@@ -29,19 +29,21 @@ body {
 
 .triangle {
   top: 500px;
-  left: 50px;
+  left: -200px;
+  height: 300px;
   pointer-events: none;
-  z-index: -2;
+  z-index: -4;
   position: fixed;
   transition: all 5s ease;
   opacity: 0;
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, 0%) rotate(40deg);
 }
 
 .show-triangle {
   top: 80%;
   opacity: 1;
-  transform: translate(-50%, 0%) rotate(40deg);
+
+  transform: translate(-50%, -50%) rotate(-4deg);
 }
 
 .moon {
@@ -62,17 +64,18 @@ body {
 }
 
 .clouds {
+  height: 200px;
   pointer-events: none;
   z-index: -2;
   position: fixed;
   transition: all 5s ease;
   opacity: 0;
-  transform: translateX(300px) rotate(0deg);
+  transform: translateX(600px) rotate(-2.5deg);
 }
 
 .show-clouds {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) rotate(-2.5deg);
 }
 .quote {
   opacity: 1;
