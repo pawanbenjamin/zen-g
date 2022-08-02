@@ -7,15 +7,17 @@ myShakeEvent.start()
 
 // const video = document.querySelector('#video')
 const quoteContainer = document.querySelector('.quote')
+const moon = document.querySelector('.moon')
 // const video = document.querySelector('#video')
 
 quoteContainer.addEventListener('click', (e) => {
   const randomIndex = Math.floor(Math.random() * quotes.length)
   e.target.classList.toggle('hide')
-
+  moon.classList.toggle('show-moon')
   setTimeout(() => {
     e.target.innerText = quotes[randomIndex]
     e.target.classList.toggle('hide')
+    moon.classList.toggle('show-moon')
   }, 4000)
 })
 
